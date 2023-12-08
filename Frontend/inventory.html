@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <script src="inventory.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js" integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Inventory Management</h1>
+        <div class="box">
+            <form action="#" onsubmit="registerInventory(event)" id="register" method="get">
+                <label for="name">Item Name:</label>
+                <input type="text" name="name" id="name">
+
+                <label for="description">Description: </label>
+                <input type="text" name="description" id="description">
+
+                <label for="price">Price: </label>
+                <input type="text" name="price" id="price">
+
+                <label for="quantity">Quantity: </label>
+                <input type="number" name="quantity" id="quantity">
+
+                <button type="submit">Add Item</button>
+            </form>    
+        </div>  
+    </div>
+    <div class="expence_list">
+        <h3>Inventory</h3>
+        <ul id="list"></ul>
+    </div>
+</body>
+</html>
